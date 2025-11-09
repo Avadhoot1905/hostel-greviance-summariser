@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Bot, BarChart3, Zap, TrendingUp } from "lucide-react";
 
 export default function About() {
   return (
@@ -53,28 +54,40 @@ export default function About() {
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Key Features</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-blue-800 mb-2">🤖 AI-Powered Analysis</h3>
+                <h3 className="text-lg font-semibold text-blue-800 mb-2 flex items-center gap-2">
+                  <Bot className="w-5 h-5" />
+                  AI-Powered Analysis
+                </h3>
                 <p className="text-blue-700">
                   Automatic categorization of complaints into relevant categories like maintenance, food, security, etc.
                 </p>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-green-800 mb-2">📊 Sentiment Analysis</h3>
+                <h3 className="text-lg font-semibold text-green-800 mb-2 flex items-center gap-2">
+                  <BarChart3 className="w-5 h-5" />
+                  Sentiment Analysis
+                </h3>
                 <p className="text-green-700">
                   Real-time sentiment analysis to understand the emotional tone of each complaint.
                 </p>
               </div>
               
               <div className="bg-purple-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-purple-800 mb-2">⚡ Priority Detection</h3>
+                <h3 className="text-lg font-semibold text-purple-800 mb-2 flex items-center gap-2">
+                  <Zap className="w-5 h-5" />
+                  Priority Detection
+                </h3>
                 <p className="text-purple-700">
                   Automatic urgency level detection to prioritize critical issues that need immediate attention.
                 </p>
               </div>
               
               <div className="bg-yellow-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-yellow-800 mb-2">📈 Analytics Dashboard</h3>
+                <h3 className="text-lg font-semibold text-yellow-800 mb-2 flex items-center gap-2">
+                  <TrendingUp className="w-5 h-5" />
+                  Analytics Dashboard
+                </h3>
                 <p className="text-yellow-700">
                   Comprehensive analytics and reporting for administrators to track trends and patterns.
                 </p>

@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
 
       if (analysisResponse.ok) {
         analysisData = await analysisResponse.json();
-        console.log('✅ AI analysis completed successfully');
+        console.log('[SUCCESS] AI analysis completed successfully');
 
         // Store the analysis result using server action
         if (analysisData && grievanceResult.grievanceId) {
@@ -49,10 +49,10 @@ export async function POST(request: NextRequest) {
           });
         }
       } else {
-        console.warn('⚠️ AI analysis service returned error status:', analysisResponse.status);
+        console.warn('[WARNING] AI analysis service returned error status:', analysisResponse.status);
       }
     } catch (analysisError) {
-      console.warn('⚠️ AI analysis service unavailable:', analysisError instanceof Error ? analysisError.message : 'Unknown error');
+      console.warn('[WARNING] AI analysis service unavailable:', analysisError instanceof Error ? analysisError.message : 'Unknown error');
       // Continue without analysis - grievance is already stored
     }
 

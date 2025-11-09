@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FileText, Bot, BarChart3 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -69,7 +70,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📝</span>
+                <FileText className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Submit</h3>
               <p className="text-gray-600">
@@ -79,7 +80,7 @@ export default function Home() {
             
             <div className="text-center">
               <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤖</span>
+                <Bot className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Analyze</h3>
               <p className="text-gray-600">
@@ -89,7 +90,7 @@ export default function Home() {
             
             <div className="text-center">
               <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📊</span>
+                <BarChart3 className="w-8 h-8 text-purple-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Track</h3>
               <p className="text-gray-600">
